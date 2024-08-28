@@ -1,0 +1,124 @@
+:root {
+  --main-color: #3f51b5;
+  --second-color: #4caf50;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Tahoma;
+}
+.box {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 6px;
+}
+.game {
+  background-color: #eee;
+  height: 100vh;
+}
+.game header {
+  background-color: var(--main-color);
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.game .container {
+  margin: auto;
+  max-width: 900px;
+}
+.level-options select {
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+.level-options select:focus {
+  outline: none;
+}
+.game .message {
+  text-align: center;
+}
+.game .message span {
+  color: var(--second-color);
+  font-weight: bold;
+}
+.game .message span::before {
+  content: "[ ";
+}
+.game .message span::after {
+  content: " ]";
+}
+.game .btn {
+  background-color: #009688;
+  color: white;
+  border: none;
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.game .word {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: var(--main-color);
+  user-select: none;
+}
+.game input {
+  display: block;
+  margin: 15px 0;
+  padding: 15px;
+  width: 100%;
+  border: 3px solid var(--main-color);
+  border-radius: 4px;
+  text-align: center;
+  caret-color: var(--main-color);
+  text-transform: capitalize;
+}
+.game input:focus {
+  outline: none;
+}
+.game .upcoming-words.show {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 15px;
+}
+.game .upcoming-words div {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+.game .control {
+  display: flex;
+  justify-content: space-between;
+}
+.control .got {
+  color: var(--second-color);
+  font-weight: bold;
+}
+.finish {
+  text-align: center;
+  margin: 20px 0;
+}
+.finish span {
+  font-size: 50px;
+  font-weight: bold;
+}
+.finish .good {
+  color: #009688;
+}
+.finish .bad {
+  color: #f44336;
+}
